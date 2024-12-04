@@ -11,7 +11,7 @@
 	<groupId>cl.tingeso</groupId>
 	<artifactId>config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>msconfig</name>
+	<name>config-server</name>
 	<description>Config Server </description>
 	<url/>
 	<licenses>
