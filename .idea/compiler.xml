@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="msconfig" />
+        <module name="apigateway" />
         <module name="servicediscovery" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="apigateway" options="-parameters" />
       <module name="msconfig" options="-parameters" />
       <module name="service-discovery" options="-parameters" />
       <module name="servicediscovery" options="-parameters" />
