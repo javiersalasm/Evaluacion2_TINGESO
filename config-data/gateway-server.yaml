@@ -23,10 +23,10 @@ spring:
             allowedMethods: "*"
             allowedHeaders: "*"
       routes:
-        - id: ms-orders
-          uri: lb://ms-orders
+        - id: ms2
+          uri: lb://ms2
           predicates:
-            - Path=/orders/**
+            - Path=/ms2/**
         - id: ms-products
           uri: lb://ms-products
           predicates:
