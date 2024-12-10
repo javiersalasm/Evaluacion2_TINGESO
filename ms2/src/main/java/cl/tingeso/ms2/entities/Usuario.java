@@ -9,7 +9,6 @@ import java.time.LocalDateTime;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @Table(name="usuarios")
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -26,5 +25,9 @@ public abstract class Usuario {
     @Enumerated(EnumType.STRING)
     private ERol rol;
 
+
+    public String getPassword() {
+        return password;
+    }
 
 }

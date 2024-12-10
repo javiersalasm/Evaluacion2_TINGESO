@@ -8,16 +8,11 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "clientes")
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 public class Cliente extends Usuario {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(unique = true, nullable = false)
-    private Long id;
 
     private String rut;
     private String nombre;
@@ -25,4 +20,10 @@ public class Cliente extends Usuario {
     private int sueldo;
     private LocalDate fechaNacimiento;
     private int antiguedadLaboral;
+
+    /*
+    public String getPassword() {
+        return super.getPassword();
+    }*/
+
 }
